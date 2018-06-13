@@ -7,9 +7,9 @@
 body{
   font-family: 'Playfair Display', serif;
   font-size: 20px;
-  width: 1200px;}
+}
 .header {
-  width: 1200px;
+  
   text-align: center;
   font-size: 19px;}
 
@@ -53,7 +53,7 @@ h2{
 .footer {
   text-align: center;
  height: 186px;
- width: 1200px;
+
  margin-left: auto; 
   margin-right: auto;
  padding: 108px; }
