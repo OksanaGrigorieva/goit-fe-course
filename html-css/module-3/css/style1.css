@@ -55,7 +55,7 @@ main{
   margin-left:auto;
 }
 article{
-  padding-bottom:137px;
+  margin-bottom:137px;
 }
 p{
   width: 422px;
@@ -67,6 +67,8 @@ p{
 h2{
   font-size: 26px;
   color: #989898;
+  padding-top:70px;
+  margin-bottom:33px;
 }
 
 
@@ -89,6 +91,6 @@ span{
     padding: 20px;
     border: 2px solid #989898;
 
-}  
+}   
 
 
