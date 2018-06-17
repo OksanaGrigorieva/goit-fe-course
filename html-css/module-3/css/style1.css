@@ -6,7 +6,7 @@
 
 body{
   font-family: 'Playfair Display', serif;
-  font-size: 20px;}
+  }
 .wrapper{
   margin-left: auto;
   margin-right:auto;
@@ -35,7 +35,7 @@ ul>li{
 .test3 {
   margin-right: 92px;
 }
-li:nth-last-child(1) {
+li:nth-last-child(1){
 	margin-right:0;
 }
 
@@ -55,20 +55,26 @@ main{
   margin-left:auto;
 }
 article{
-  margin-bottom:137px;
+  margin-bottom:137px;}
+
+img{
+  margin-bottom:105px;
 }
+
 p{
   width: 422px;
   font-size: 13px;
   text-align: justify;
   color: #989898;
    }
+p:nth-last-child(1){
+	margin:0;
+}
 
 h2{
   font-size: 26px;
   color: #989898;
-  padding-top:70px;
-  margin-bottom:33px;
+ margin-top: 0px;
 }
 
 
@@ -76,8 +82,7 @@ h2{
 .footer {
   text-align: center;
  height: 186px;
-
- margin-left: auto; 
+  margin-left: auto; 
   margin-right: auto; 
 }
 
