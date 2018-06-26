@@ -55,8 +55,12 @@ a:hover{
   color: #1abc9c;}
 
 .section_1{
-  display:inline-block;}
-
+  display:block;}
+img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
 .fond_1 {
   display:block;
   position: relative;
@@ -142,6 +146,9 @@ background:#e9f0fd;}
   margin: 10px 15px;
   cursor: pointer;}
 
+ .gallery__item:hover.price{
+    background:#1abc9c;}
+
 .img{
   display: block;
   margin: 0;
@@ -150,14 +157,35 @@ background:#e9f0fd;}
   height: 280px;
 object-fit: cover;}
 
-.object{
+.object_1{
 position: absolute;
 width: 255px;
 height: 280px;
 z-index: 90;
-left: 335px;
-top: 966px;
-}
+top: 966px;}
+
+
+.object_2{
+position: absolute;
+width: 255px;
+height: 280px;
+z-index: 90;
+top: 966px;}
+
+.object_3{
+position: absolute;
+width: 255px;
+height: 280px;
+z-index: 90;
+top: 966px;}
+
+.object_4{
+position: absolute;
+width: 255px;
+height: 280px;
+z-index: 90;
+top: 966px;}
+
 
 .prace{
   color:#ffffff;
@@ -174,8 +202,6 @@ span{
   padding: 10px;
   background: #8c8c8c;}
 
-  .gallery__item:hover .price{
-    background:#1abc9c;}
     .footer{
       width: 1800px;
       height: 90px;
