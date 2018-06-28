@@ -187,19 +187,20 @@ z-index: 90;
 top: 966px;}
 
 
-.prace{
-  color:#ffffff;
+.price{
   background:#323232;}
 
 p{ 
   padding: 10px;
   margin: 0;
-  display: inline-block;}
+  display: inline-block;
+color: #ffffff;}
 
 span{
   float: right;
   display: block;
   padding: 10px;
+  color: #ffffff;
   background: #8c8c8c;}
 
     .footer{
