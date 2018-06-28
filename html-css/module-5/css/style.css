@@ -212,6 +212,19 @@ span{
   .gallery :hover span{
     background:#7fd9c7;}
 
+    .gallery :hover > .object_1{
+      display:block;}
+    
+    .gallery :hover > .object_2{
+      display:block;}
+    
+    .gallery :hover > .object_3{
+      display:block;}
+    
+    .gallery :hover > .object_4{
+      display:block;}
+    
+
     .footer{
       width: 1800px;
       height: 90px;
