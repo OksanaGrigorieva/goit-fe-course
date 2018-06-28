@@ -146,8 +146,7 @@ background:#e9f0fd;}
   margin: 10px 15px;
   cursor: pointer;}
 
- .gallery :hover .price {
-    background:#1abc9c;}
+
 
 .img{
   display: block;
@@ -206,6 +205,12 @@ span{
   padding: 10px;
   color: #ffffff;
   background: #8c8c8c;}
+
+  .gallery :hover .price {
+    background:#1abc9c;}
+
+  .gallery :hover span{
+    background:#7fd9c7;}
 
     .footer{
       width: 1800px;
