@@ -146,7 +146,7 @@ background:#e9f0fd;}
   margin: 10px 15px;
   cursor: pointer;}
 
- .gallery__item:hover.price{
+ .gallery :hover .price {
     background:#1abc9c;}
 
 .img{
@@ -158,6 +158,7 @@ background:#e9f0fd;}
 object-fit: cover;}
 
 .object_1{
+  display: none;
 position: absolute;
 width: 255px;
 height: 280px;
@@ -166,6 +167,7 @@ top: 966px;}
 
 
 .object_2{
+  display: none;
 position: absolute;
 width: 255px;
 height: 280px;
@@ -173,6 +175,7 @@ z-index: 90;
 top: 966px;}
 
 .object_3{
+  display: none;
 position: absolute;
 width: 255px;
 height: 280px;
@@ -180,6 +183,7 @@ z-index: 90;
 top: 966px;}
 
 .object_4{
+  display: none;
 position: absolute;
 width: 255px;
 height: 280px;
