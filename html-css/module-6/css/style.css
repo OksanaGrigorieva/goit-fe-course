@@ -35,11 +35,13 @@ h2{
 
  li{
      list-style-type: none;
+     position: relative;
       font-size: 14px;
       font-weight: bold; 
 }
 
 li:hover{
+     
     color: #f38181;
     cursor: pointer;
 }
@@ -48,8 +50,8 @@ li::after {
         content: "";
         border-bottom: 2px solid #f38181;
         position: absolute;
-        left: 750px;
-        top: 62px;
+        left:0px;
+        top: 20px;
         width: 0px;
         height: 3px;
         z-index: 86;
@@ -58,17 +60,7 @@ li::after {
         transition-timing-function: ease-in-out;
          }
 
-.menu_2::after{
-left: 850px;}
 
-.menu_3::after{
-left: 950px;}
-
-.menu_4::after{
-left: 1040px;}
-
-.menu_5::after{
-left: 1140px;}
 
 li:hover::after{
     width: 60px;}   
@@ -233,6 +225,7 @@ margin-right: 10%;}
 }
 
 .footer{
+    display: block;
     width: 1200px;
     height: 60px;
 margin-left: auto;
