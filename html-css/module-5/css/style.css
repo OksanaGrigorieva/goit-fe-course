@@ -157,12 +157,15 @@ background:#e9f0fd;}
 object-fit: cover;}
 
 .object_1{
-  display: none;
-position: absolute;
-width: 255px;
-height: 280px;
-z-index: 90;
-top: 966px;}
+  display:none;
+  position: absolute;
+  background:#737373;
+  background:rgba(0,0,0,0.4);
+  width: 235px;
+  height:261px;
+  padding:center;
+  z-index: 90;
+  top: 966px;}
 
 
 .object_2{
@@ -224,6 +227,13 @@ span{
     .gallery :hover > .object_4{
       display:block;}
     
+    .icon_heart{
+      display: block;
+      width: 50px;
+      height: 50px;
+      border: 2px;
+      z-index: 95;
+    }
 
     .footer{
       width: 1800px;

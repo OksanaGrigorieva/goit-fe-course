@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+
+body{
+    font-family: «Montserrat», sans-serif; 
+    color: #333333;
+}
+.wrapper{
+     width: 1200px; 
+     margin: auto;}
+
+.header{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 90px;
+        width: 1200px;
+        align-items: center;
+        color: #95e1d3;
+    margin-left: auto;
+    margin-right: auto}
+
+h2{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;}
+  
+  ul{
+    display: flex;
+    justify-content:space-between;
+    width: 450px; }
+
+ li{
+     list-style-type: none;
+      font-size: 14px;
+      font-weight: bold; 
+}
+
+li:hover{
+    color: #f38181;
+    cursor: pointer;
+}
+
+li::after {
+        content: "";
+        border-bottom: 2px solid #f38181;
+        position: absolute;
+        left: 750px;
+        top: 62px;
+        width: 0px;
+        height: 3px;
+        z-index: 86;
+        transition-property: width;
+        transition-duration: .200ms;
+        transition-timing-function: ease-in-out;
+         }
+
+.menu_2::after{
+left: 850px;}
+
+.menu_3::after{
+left: 950px;}
+
+.menu_4::after{
+left: 1040px;}
+
+.menu_5::after{
+left: 1140px;}
+
+li:hover::after{
+    width: 60px;}   
+    
+.title{
+    width: 1200px;
+    height: 270px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title>p{
+    padding-top: 100px;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 20px;}
+
+.title>h1{
+    font-size: 30px;
+    position:relative;
+}
+
+h1::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #f38181;
+    left: 570px;
+    top: 80px;
+    width: 60px;}
+
+.article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;}
+
+.item{
+    width: 400px;
+    height: 125px;}
+    
+h4{
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 20px;}
+
+.item>h4{
+    padding-left: 94px;}
+
+.item>p{
+    font-size: 15px;
+    padding-left: 94px;}
+
+.icon_item{
+    width: 90px;
+    padding-left: 25px;}
+
+.icon_item>img{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 95;}
+
+.text{
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 42px;
+   text-align: center;
+    margin-bottom: 60px;}
+
+
+
+.cards{
+    display: flex;
+    width: 1200px;
+    height: 624px;
+    flex-direction: row;
+    justify-content: space-around;
+margin-left: 10%;
+margin-right: 10%;}
+
+
+.card_item{
+    text-align: center;}
+
+.card_item>h4{
+    padding-top: 30px;
+}
+
+.card_item>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #b3b3b3;}
+
+.fond{
+    display: block;
+    margin: 0;
+    background: #95e1d3;
+    width: 380px;
+    height: 470px;
+    position: relative;
+    z-index: 19;}
+
+
+.fond>img{
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    left: 0;
+    z-index: 30;}
+
+.gradient{
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient(#f1918c, #e6cf82);
+    opacity: .0;
+    z-index: 100;}
+
+.fond:hover .gradient{
+    opacity: .8;
+    cursor: pointer;}
+
+.fond:hover .icon{
+    display: block;
+}
+
+.icons_row{
+    width: 380px;
+    height: 470px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    display: none;
+    width: 58px;
+    height: 58px;
+    background: #fce38a;
+    z-index: 120;}
+
+
+.icon:hover{
+    background: #95e1d3;}
+
+.cards::after{
+    content: '';
+    position: absolute;
+    background-color: #b3b3b3;
+    height: 2px;
+    width: 1200px;
+    top: 1580px;
+ 
+}
+
+.footer{
+    width: 1200px;
+    height: 60px;
+margin-left: auto;
+margin-right: auto;}
+
+.addres{
+    display: block;
+    font-size: 14px;
+    width: 300px;
+}
+
+
+.button{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+a{
+    width: 150px;
+    height: 40px;
+    background: #95e1d3;
+    text-decoration: none;
+    padding: 10px;
+    color: #ffffff;}
+
+
+.cell{
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    border: #333333;
+    border: 3px;
+
+}
+
+
+
+
+
+
+    
