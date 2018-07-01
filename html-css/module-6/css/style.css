@@ -232,19 +232,21 @@ transition-duration: 200ms;
 
 .footer{
     display: block;
+    position: relative;
     width: 1200px;
     height: 60px;
 margin-left: auto;
 margin-right: auto;}
 
-.addres{
-    display: block;
-    font-size: 14px;
-    width: 300px;
+address{
+    float: left;
+    width: 312px;
+    height: 14px;
 }
 
 
 .button{
+    position: absolute;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -261,12 +263,10 @@ a{
 
 
 .cell{
-    display: inline-block;
     width: 230px;
     height: 40px;
-    border: #333333;
-    border: 3px;
-
+    padding: 10px;
+    border: 2px solid #b3b3b3;
 }
 
 
