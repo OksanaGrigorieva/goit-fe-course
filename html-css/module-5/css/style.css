@@ -56,7 +56,8 @@ a:hover{
 
 .section_1{
   display:block;}
-img{
+
+.fond_1>img {
   width:100%;
   height:100%;
   object-fit:cover;
@@ -120,6 +121,7 @@ h2::after {
   left: 50%;
   transform: translateX(-50%);
   background:#1abc9c;}
+
 .title_2{
   text-align:center;
 background:#e9f0fd;}
@@ -139,6 +141,7 @@ padding-bottom:100px;
 background:#e9f0fd;}
 
 .gallery_item{
+  position: relative;
   display: inline-block;
   vertical-align: top;
   height:285px;
@@ -156,42 +159,18 @@ background:#e9f0fd;}
   height: 280px;
 object-fit: cover;}
 
-.object_1{
-  display:none;
+.object{
+  display:blok;
   position: absolute;
   background:#737373;
   background:rgba(0,0,0,0.4);
-  width: 235px;
-  height:261px;
+  opacity: o;
+  width: 240px;
+  height:260px;
   padding:center;
   z-index: 90;
-  top: 966px;}
-
-
-.object_2{
-  display: none;
-position: absolute;
-width: 255px;
-height: 280px;
-z-index: 90;
-top: 966px;}
-
-.object_3{
-  display: none;
-position: absolute;
-width: 255px;
-height: 280px;
-z-index: 90;
-top: 966px;}
-
-.object_4{
-  display: none;
-position: absolute;
-width: 255px;
-height: 280px;
-z-index: 90;
-top: 966px;}
-
+  left: 7px;
+  top: 10px;}
 
 .price{
   background:#323232;}
@@ -209,31 +188,54 @@ span{
   color: #ffffff;
   background: #8c8c8c;}
 
-  .gallery :hover .price {
+  .gallery_item:hover .price {
     background:#1abc9c;}
 
-  .gallery :hover span{
+  .gallery_item:hover span{
     background:#7fd9c7;}
 
-    .gallery :hover > .object_1{
-      display:block;}
-    
-    .gallery :hover > .object_2{
-      display:block;}
-    
-    .gallery :hover > .object_3{
-      display:block;}
-    
-    .gallery :hover > .object_4{
-      display:block;}
-    
-    .icon_heart{
-      display: block;
+    .gallery_item:hover .object{
+      display: block;}
+
+    .icon{
+      width: 240px;
+      height: 260px;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: absolute;
+      z-index: 99;
+    }
+        
+   .icon>img{
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        border: 2px solid #fff;
+        cursor: pointer;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        z-index: 100;
+      }
+
+    .icon_2{
+      display: inline-block;
+      width: 165px;
+      height: 50px;
+      border: 2px solid #fff;
+      cursor: pointer;
+      z-index: 100;
+    }
+
+    .icon_2>img{
       width: 50px;
       height: 50px;
-      border: 2px;
-      z-index: 95;
+      padding: 0px;
+      margin: 0px;
     }
+
 
     .footer{
       width: 1800px;
