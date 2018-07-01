@@ -63,7 +63,7 @@ li::after {
 
 
 li:hover::after{
-    width: 60px;}   
+    width: 100%;}   
     
 .title{
     width: 1200px;
