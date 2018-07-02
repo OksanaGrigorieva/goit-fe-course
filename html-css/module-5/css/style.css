@@ -162,15 +162,16 @@ object-fit: cover;}
 .object{
   display:blok;
   position: absolute;
-  background:#737373;
-  background:rgba(0,0,0,0.4);
-  opacity: o;
+  background:#8c8c8c;
+  opacity: .0;
   width: 240px;
   height:260px;
   padding:center;
   z-index: 90;
   left: 7px;
   top: 10px;}
+
+
 
 .price{
   background:#323232;}
@@ -195,7 +196,7 @@ span{
     background:#7fd9c7;}
 
     .gallery_item:hover .object{
-      display: block;}
+      opacity: .9;}
 
 .icon{
   width: 240px;
