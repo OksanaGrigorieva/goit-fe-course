@@ -162,8 +162,8 @@ object-fit: cover;}
 .object{
   display:blok;
   position: absolute;
-  background:#8c8c8c;
-  opacity: .0;
+  background:#737373;
+  opacity: 0;
   width: 240px;
   height:260px;
   padding:center;
@@ -196,7 +196,7 @@ span{
     background:#7fd9c7;}
 
     .gallery_item:hover .object{
-      opacity: .9;}
+      opacity: 0.549;}
 
 .icon{
   width: 240px;

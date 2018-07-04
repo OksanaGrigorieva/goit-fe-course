@@ -218,8 +218,11 @@ transition-duration: 200ms;
     z-index: 120;}
 
 
+
+
 .icon:hover{
-    background: #95e1d3;}
+background: #95e1d3;
+cursor: pointer;}
 
 .cards::after{
     content: '';
