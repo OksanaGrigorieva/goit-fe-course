@@ -72,7 +72,6 @@ a:hover{
   z-index: 1;}
 
 .fond_2 {
-  display:blok;
   background-color: rgb(0, 0, 2);
   opacity: 0.522;
   position: absolute;
@@ -128,64 +127,77 @@ h2::after {
 background:#e9f0fd;}
 
 .section_2{
-  display:inline-block;
+  display: inline-block;
   width:1800px;
-  height:675px;}
+  height:675px;
+  background:#e9f0fd;
+  z-index: -1;
+}
 
 .gallery{
-  display:inline-block;
-  text-align:center;  
- margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 1800px;
-padding-bottom:100px;
-background:#e9f0fd;}
+  margin:0 auto;
+}
 
-.gallery_item{
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  height:285px;
-  width: 255px;
-  margin: 10px 15px;
-  cursor: pointer;}
-
+  .gallery_item{
+    position: relative;
+    height:285px;
+    width: 255px;
+    margin: 10px 15px;
+    cursor: pointer;
+  z-index: 1;}
 
 
-.img{
-  display: block;
-  margin: 0;
-  padding: 0;
+
+.gallery_item>img{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 280px;
-object-fit: cover;}
+  height: 100%;
+  object-fit: cover;
+z-index: 2;}
 
 .object{
-  display:blok;
-  position: absolute;
-  background:#737373;
-  opacity: 0;
-  width: 240px;
-  height:260px;
-  padding:center;
-  z-index: 90;
-  left: 7px;
-  top: 10px;}
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 235px;
+height: 265px;
+margin: 10px;
+position: absolute;
+opacity: 0;
+background: rgba(0, 0, 0, 0.4);
+transition: opacity 0.2s ease-in;
+z-index: 3;}
 
+.gallery_item:hover .object{
+  opacity: 1;
+}
 
 
 .price{
+  position: absolute;
+  bottom: -42px;
   background:#323232;}
 
 p{ 
-  padding: 10px;
-  margin: 0;
+  padding: 12px;
   display: inline-block;
-color: #ffffff;}
+  width: 201px;
+  height: 42px;
+  color: #ffffff;}
 
 span{
   float: right;
   display: block;
-  padding: 10px;
+  width: 54px;
+  height: 42px;
+  padding: 12px;
   color: #ffffff;
   background: #8c8c8c;}
 
@@ -195,45 +207,34 @@ span{
   .gallery_item:hover span{
     background:#7fd9c7;}
 
-    .gallery_item:hover .object{
-      opacity: 0.549;}
+    
 
 .icon{
-  width: 240px;
-  height: 260px;
-  display: flex;
-  align-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  position: absolute;
-  z-index: 99;}
-        
-.icon>img{
-    display:block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #fff;
-    cursor: pointer;
-    z-index: 100;}
-
-.icon>img:hover{
-  background:#1abc9c;}
-
-.icon_2{
-  display: block;
-  display:relative;
-  width: 165px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
   border: 1px solid #fff;
   cursor: pointer;
-  margin-left:auto;
-  margin-right:auto;
-  z-index: 100;}
+  background-color: transparent;}
 
-.icon_2:hover{
+        
+
+
+
+.icon:hover{
+  background:#1abc9c;}
+
+.icons_2{
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: transparent;
+  cursor: pointer;}
+
+.icons_2:hover{
   background:#515151;}
 
-.icon_2>img{
+.icons_2>img{
       display:block;
       width:50px;}
 
@@ -252,10 +253,11 @@ span{
       height: 90px;
       display:inline-block;
       text-align:center;
+      padding-top: 37px;
       background:#323232;}
   
-.adress{
-    padding-top:40px;
+adress{
+    vertical-align: middle;
      font-size:16px;
     color:#ffffff;}
   
