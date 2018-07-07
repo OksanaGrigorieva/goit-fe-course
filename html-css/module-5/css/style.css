@@ -207,21 +207,23 @@ span{
   .gallery_item:hover span{
     background:#7fd9c7;}
 
-    
+   .icons{
+     display: flex;
+     justify-content: space-between;
+     width: 170px;
+   } 
 
 .icon{
-  width: 60px;
-  height: 60px;
-  padding: 5px;
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+  padding:0px;
   border: 1px solid #fff;
   cursor: pointer;
-  background-color: transparent;}
+  background-color: transparent;
+transition: background-color 0.2s case-in;}
 
-        
-
-
-
-.icon:hover{
+.icons>.icon:hover{
   background:#1abc9c;}
 
 .icons_2{
@@ -229,22 +231,33 @@ span{
   align-items: center;
   border: 1px solid #fff;
   background-color: transparent;
-  cursor: pointer;}
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+position: relative;}
+
+.icons_2>.icon{
+  border: none;
+  margin: 0px;
+  position: absolute;
+  bottom: 0px;
+
+}
 
 .icons_2:hover{
   background:#515151;}
 
-.icons_2>img{
-      display:block;
-      width:50px;}
+
 
 .cart{
   display:block;
   font-size:12px;
-  left:80px;
-  top:140px;
+  margin: 0px auto;
   width:110px;
   height:50px; 
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
   position:absolute;
   z-index:101;}
 
