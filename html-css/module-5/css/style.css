@@ -185,7 +185,7 @@ z-index: 3;}
   bottom: -42px;
   background:#323232;}
 
-p{ 
+title_2,.price>p{ 
   padding: 12px;
   display: inline-block;
   width: 201px;
@@ -221,7 +221,8 @@ span{
   border: 1px solid #fff;
   cursor: pointer;
   background-color: transparent;
-transition: background-color 0.2s case-in;}
+transition: background-color 0.2s case-in;
+}
 
 .icons>.icon:hover{
   background:#1abc9c;}
@@ -235,6 +236,11 @@ transition: background-color 0.2s case-in;}
   height: 50px;
   cursor: pointer;
 position: relative;}
+
+.icons_2>p{
+  color: #ffffff;
+  padding-top: 19px;
+}
 
 .icons_2>.icon{
   border: none;
