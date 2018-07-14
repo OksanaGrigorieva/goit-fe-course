@@ -1,0 +1,92 @@
+@import'fonts.css';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+
+body{
+    font-family: 'Montserrat Regular'; 
+    color: #222222;
+}
+
+.wrapper{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header{
+    width: 940px;
+    position: relative;
+    padding-top:55px;
+  margin-bottom:100px;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #222222;
+  text-transform: capitalize;
+}
+
+a:hover{
+    color: #fedd6c;
+}
+
+.menu{
+    display: flex;
+    width: 485px;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+}
+
+.logo{
+    display: block;
+    font-size: 26px;
+    position: absolute;
+    left: 0;
+  color: #fed136;
+}
+   
+
+.title{
+  display:inline-block;
+  width:940px;
+  text-align:center;
+  margin-bottom:50px;
+}
+
+
+
+.column{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  width:940px;
+}
+
+.element{
+  width:290px;
+  height:236px;
+}
+.element>img{
+  display:block;
+  margin:0 auto;
+}
+
+.element>h4{
+  display:inline-block;
+}
+
+
+
+
+
+
+
