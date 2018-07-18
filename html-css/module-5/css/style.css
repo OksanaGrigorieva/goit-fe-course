@@ -81,10 +81,11 @@ a:hover{
 
 .title_1{
   color:#fff;
+  width: 100%;
+  text-align: center;
  text-transform: uppercase;
   line-height: 1.5;
   position:absolute;
-  padding-left: 350px;
   top: 300px;
   z-index:3;}
 
@@ -94,8 +95,8 @@ h1{
   .fond_3{
     display: block;
     position: absolute;
-    top: 316px;
-    left: 180px;
+    top: 300px;
+    left: 150px;
     z-index:78;}
 
   .fond_3>img{
