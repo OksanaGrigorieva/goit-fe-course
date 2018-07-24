@@ -95,16 +95,23 @@ h1{
   font-size:50px;}
 
   .fond_3{
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: absolute;
+    width: 1110px;
+    height: 100px;
     top: 300px;
-    left: 150px;
+    left: 100px;
     z-index:78;}
 
-  .fond_3>img{
-    width: 95%;
-    cursor: pointer;
-  }
+  .blok_1, .blok_2{
+   background: #1abc9c;
+   width: 100px;
+   padding: 30px;
+}
+
+
   .title_2{
     text-align: center;
   }
@@ -187,12 +194,12 @@ z-index: 3;}
 .price{
   position: absolute;
   bottom: -42px;
+  width: 100%;
   background:#323232;}
 
 title_2,.price>p{ 
   padding: 12px;
   display: inline-block;
-  width: 201px;
   height: 42px;
   color: #ffffff;}
 
@@ -239,8 +246,8 @@ transition: background-color 0.2s case-in;
   width: 170px;
   height: 50px;
   cursor: pointer;
-position: relative;
-background: #515151;
+  position: relative;
+  background: #515151;
 }
 
 .icons_2>p{
@@ -282,4 +289,11 @@ adress{
     vertical-align: middle;
      font-size:16px;
     color:#ffffff;}
+
+.link>a{
+  color: #fff;
+}
+.link>a:hover{
+  color: #1abc9c;
+}
   
