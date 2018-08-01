@@ -55,11 +55,13 @@ a{
     padding: 2% 4%;
     display: inline-block;
     font-size: 14px;
+    border: transparent;
 
 }
 
 .border:hover{
     border: 2px solid #ffffff;
+
    
 }
 
@@ -133,7 +135,7 @@ a{
 
 .icon>img{
     position: absolute;
-    top: 45%;
+    top: 100px;
 }
 
 
@@ -191,10 +193,6 @@ a{
     .blok>p{
         font-size: 14px;
     }
-
-    .icon>img{
-        top: 50%;
-    }
 }
 
 @media (min-width:1200px){
@@ -206,18 +204,11 @@ a{
         height: auto;
         flex-direction: row;
         flex-wrap: nowrap;
-    }
-
-    .icon>img{
-        right: 30%;
-    }
+    } 
 
     h4{
         padding-top: 5%;
     }
-
-   
-
 
 }
 
