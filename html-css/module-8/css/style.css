@@ -55,12 +55,12 @@ a{
     padding: 2% 4%;
     display: inline-block;
     font-size: 14px;
-    border: transparent;
+    border: 2px solid transparent;
 
 }
 
 .border:hover{
-    border: 2px solid #ffffff;
+    border-color:  #ffffff;
 
    
 }
