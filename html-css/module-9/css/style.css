@@ -43,14 +43,7 @@ body{
 }
 
 
-
-a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-
-.border{
+.login_border{
     border-radius: 30px;
     padding: 2% 4%;
     display: inline-block;
@@ -59,12 +52,20 @@ a{
 
 }
 
-.border:hover{
+.login_border:hover{
     border-color:  #ffffff;
   
 }
 
+a {
+    text-decoration: none !important;
+}
 
+a>span{
+    color: #ffffff;
+
+
+}
 
  .logo{
      text-transform: uppercase;
@@ -73,18 +74,10 @@ a{
 
  }
 
- .border>span{
-     color: #ffffff;
- }
-
- a>span{
-     color: #ffffff;
-
- }
 
  h1{
-     text-transform: uppercase;
-     font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
     margin-bottom: 10.07%;
  }
 
@@ -146,9 +139,11 @@ a{
 }
 
 
-.icon>img{
+.icon{
     position: absolute;
-    top: 100px;
+    top: 105px;
+    right: 50%;
+    transform: translateX(60px);
 }
 
 
@@ -167,6 +162,8 @@ a{
     font-weight: bold;
     font-size: 0.8rem;
 }
+
+
 
 @media (min-width:768px){
     .heder{
