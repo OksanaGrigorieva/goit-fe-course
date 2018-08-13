@@ -1,0 +1,40 @@
+.button--header{
+    padding-bottom: 229px;
+}
+
+.button>a:hover{
+    cursor:pointer;
+  }
+
+.button__elem{
+    width: 200px;
+    margin:0 auto;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+}
+
+.button--footer{
+    display:block;
+    position: absolute;
+    width:330px;
+    height:40px;
+    right:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    }
+    
+    .button__elem--footer{
+    
+       width: 150px;
+       height: 40px;
+       background: #95e1d3;
+       text-decoration: none;
+       padding:10px;
+       color: #fff;
+       text-align:center;}
+    
+
+    
+    

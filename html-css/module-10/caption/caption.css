@@ -1,0 +1,45 @@
+.caption{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 127px;
+
+}
+
+
+.caption__text{
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+}
+
+
+.caption__item{
+    font-size: 30px;
+}
+
+.caption--white{
+    padding-top: 150px;
+    color: #fff;
+}
+
+.caption__text--white{
+    font-size: 72px;
+    
+}
+
+.caption__item--white{
+    font-size: 150px;
+    padding-top: 50px;
+
+}
+
+.caption::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 650px;
+    top: 120px;
+    width: 60px;
+    background-color: #f38181;
+}

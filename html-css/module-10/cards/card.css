@@ -1,0 +1,94 @@
+.cards{
+    display: flex;
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+margin-left: auto;
+margin-right: auto;
+position: relative;}
+
+
+.card_item{
+    text-align: center;}
+
+.card_item>h4{
+    padding-top: 30px;
+}
+
+.card_item>p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #b3b3b3;}
+
+.fond{
+    display: block;
+    margin: 0;
+    background: #95e1d3;
+    width: 380px;
+    height: 470px;
+    position: relative;
+    z-index: 19;}
+
+
+.fond>img{
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    left: 0;
+    z-index: 30;}
+
+.gradient{
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient(#f1918c, #e6cf82);
+    opacity: .0;
+    z-index: 100;}
+
+.fond:hover .gradient{
+    opacity: .8;
+    cursor: pointer;}
+
+.fond:hover.fond>img, .gradient{
+transform: translate(-20px,-20px);
+transition-duration: 200ms;
+}
+
+.fond:hover .icon{
+    display: block;
+}
+
+.icons_row{
+    width: 380px;
+    height: 470px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    display: none;
+    width: 58px;
+    height: 58px;
+    background: #fce38a;
+    margin-left: 1px;
+    z-index: 120;}
+
+
+
+
+.icon:hover{
+background: #95e1d3;
+cursor: pointer;}
+
+.cards::after{
+    content: '';
+    position: absolute;
+    background-color: #b3b3b3;
+    height: 2px;
+    width: 100%;
+    top: 600px;
+ 
+}

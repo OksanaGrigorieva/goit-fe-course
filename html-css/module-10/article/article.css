@@ -1,0 +1,49 @@
+
+.article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item{
+    width: 400px;
+    height: 125px;
+}
+
+.item__title{
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-left: 94px;
+}
+
+
+.item__text{
+    font-size: 15px;
+    padding-left: 94px;}
+
+.item__icon{
+    padding-left: 25px;
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  .icon-alarm{
+    font-size: 32px;
+    color: red;
+  }
