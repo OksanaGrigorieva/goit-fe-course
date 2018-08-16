@@ -1,5 +1,16 @@
+.button{
+    display:block;
+    width:330px;
+    height:40px;
+       
+}
+
+
 .button--header{
+    padding-top: 100px;
     padding-bottom: 229px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .button>a:hover{
@@ -10,31 +21,36 @@
     width: 200px;
     margin:0 auto;
     padding: 10px;
-    border: 2px solid #ffffff;
+    border: 2px solid #fff;
     text-transform: uppercase;
 }
 
 .button--footer{
-    display:block;
-    position: absolute;
-    width:330px;
-    height:40px;
     right:0px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end; 
-    }
     
-    .button__elem--footer{
+}
+
     
-       width: 150px;
-       height: 40px;
-       background: #95e1d3;
-       text-decoration: none;
-       padding:10px;
-       color: #fff;
-       text-align:center;}
+.button__elem--footer{
     
+    width: 150px;
+    height: 40px;
+    background: #95e1d3;
+    text-decoration: none;
+    padding:10px;
+    color: #fff;
+    text-align:center;
+    border: none;
+}
+  
+input{
+    text-indent:5px;
+    width:150px;
+    height: 40px;
+  }
 
     
     

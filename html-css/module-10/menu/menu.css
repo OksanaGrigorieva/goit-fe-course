@@ -15,26 +15,38 @@
     color: #fce38a;
 }
 
-.icon-cart:hover{
-    color: #fce38a;
-  
+
+
+.menu__link--header:hover::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: #fce38a;
+    left: 0px;
+    top: 20px;
+    width: 60px;
+    transition-property: width;
+    transition-duration: .200ms;
+    transition-timing-function: ease-in-out;
 }
 
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;    
+}
 
-    .menu__link--header:hover::after{
-        content: '';
-        position: absolute;
-        height: 2px;
-        background-color: #fce38a;
-        left: 0px;
-        top: 20px;
-        width: 60px;
-        transition-property: width;
-        transition-duration: .200ms;
-        transition-timing-function: ease-in-out;
+.icon:hover{
+    color: #fce38a;
+}
 
-       }
+      
 
+    
+      
       
       
 

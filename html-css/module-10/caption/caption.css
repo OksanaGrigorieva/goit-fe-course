@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     position: relative;
+    padding-top: 50px;
     margin-bottom: 127px;
 
 }
@@ -38,8 +39,7 @@
     content: '';
     position: absolute;
     height: 3px;
-    left: 650px;
-    top: 120px;
+    top: 170px;
     width: 60px;
     background-color: #f38181;
 }

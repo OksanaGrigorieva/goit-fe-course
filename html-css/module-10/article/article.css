@@ -25,25 +25,24 @@
     font-size: 15px;
     padding-left: 94px;}
 
-.item__icon{
-    padding-left: 25px;
+
+    .item__icon {
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+        color:#95e1d3;
+      }
+
+
+
+.icon-container{
+    padding-left: 30px;
     display: block;
     position: absolute;
-    width: 40px;
-    height: 40px;
+   
   
 }
 
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  }
-
-  .icon-alarm{
-    font-size: 32px;
-    color: red;
-  }
