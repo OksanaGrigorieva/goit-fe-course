@@ -481,19 +481,19 @@ h1 {
 }
 
 .item {
-  width: 400px;
+  width: 25rem;
   height: 125px;
+  margin: auto;
 }
 
 .item__title {
   font-size: 14px;
   margin-bottom: 20px;
-  padding-left: 94px;
 }
 
 .item__text {
   font-size: 15px;
-  padding-left: 94px;
+  margin-left: 5rem;
 }
 
 .item__icon {
@@ -694,6 +694,7 @@ input {
   background-image: linear-gradient(#f1918c, #e6cf82);
   opacity: .0;
   z-index: 100;
+  transition-duration: 200ms;
 }
 
 .card-fond:hover .card-gradient {
@@ -705,7 +706,6 @@ input {
 .card-gradient {
   -webkit-transform: translate(-10px, -10px);
   transform: translate(-10px, -10px);
-  transition-duration: 200ms;
 }
 
 .icons-row {

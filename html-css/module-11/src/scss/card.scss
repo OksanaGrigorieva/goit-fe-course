@@ -50,18 +50,18 @@
     height: 100%;
     background-image: linear-gradient(#f1918c, #e6cf82);
     opacity: .0;
-    z-index: 100;}
+    z-index: 100;
+    transition-duration: 200ms; 
+}
 
 .card-fond:hover .card-gradient{
     opacity: .8;
-    cursor: pointer;}
-
-.card-fond:hover.card-fond>img, .card-gradient{
-    transform: translate(-10px,-10px);
-    transition-duration: 200ms;
+    cursor: pointer;
 }
 
-
+.card-fond:hover.card-fond>img, .card-gradient{
+    transform: translate(-10px,-10px);   
+}
 
 
 .icons-row{
@@ -81,9 +81,6 @@
     z-index: 110;
     
 }
-
-
-
   
 
 .icon-container-card{
@@ -112,9 +109,6 @@
     color: #fff;
     
 }
-
-
-
 
 .cards::after{
     content: '';
