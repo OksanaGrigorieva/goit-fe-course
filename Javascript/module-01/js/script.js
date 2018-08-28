@@ -1,6 +1,4 @@
-'use strict';
 
-'use strict';
 /*
   Напишите скрипт, для авторизации администратора в панели управления.
   
@@ -25,19 +23,28 @@ const adminPassword = 'm4ngo1zh4ackz0r';
   PS: для удобства и чистоты кода сохраните в переменные сообщения отображаемые в alert
 */
 
-var adminLogin = prompt('Введит логин');
 
-if (adminLogin === 'admin') {
-  var adminPassword = prompt('Введите пароль');
-  if (adminPassword === 'm4ngo1zh4ackz0r') {
-    alert('Добро пожаловать!');
-  } else if (adminPassword) {
-    alert('Доступ заперещен!');
-  } else {
-    alert('Отменено пользователем!');
-  }
-} else if (adminLogin) {
-  alert('Доступ заперещен!');
-} else {
-  alert('Отменено пользователем!');
-}
+const adminLogin = 'admin';
+const adminPassword = 'm4ngo1zh4ackz0r';
+
+const opened = ('Добро пожаловать')
+const blocked = ('Доступ заперещен!');
+const cancel = ('Отменено пользователем!');
+
+const userLogin = prompt ('Введитe логин');
+
+ if (userLogin === adminLogin){
+     const userPassword = prompt ('Введите пароль'); 
+  if (userPassword === adminPassword){
+     alert ( opened );
+ } else if (userPassword === null){
+     alert ( cancel );
+ } else {
+    alert ( blocked );
+ } 
+
+}else if ( userLogin === null ){ 
+     alert ( cancel );
+ } else{
+    alert ( blocked );
+ }
