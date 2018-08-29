@@ -27,9 +27,9 @@ const adminPassword = 'm4ngo1zh4ackz0r';
 const adminLogin = 'admin';
 const adminPassword = 'm4ngo1zh4ackz0r';
 
-const opened = ('Добро пожаловать')
-const blocked = ('Доступ заперещен!');
-const cancel = ('Отменено пользователем!');
+const opened = 'Добро пожаловать';
+const blocked = 'Доступ заперещен!';
+const cancel = 'Отменено пользователем!';
 
 const userLogin = prompt ('Введитe логин');
 
