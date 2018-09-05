@@ -22,23 +22,29 @@
 */
 
 
+
 let userInput;
 const numbers = [];
 let total = 0;
 
+
+
 do{
-    userInput = prompt( 'Введите  число');
+    userInput = prompt( 'Введите  число','');
  
       if (Number.isNaN(+userInput)){
-         alert('Было введено не число, попробуйте еще раз');
+         alert('Было введено не число, попробуйте еще раз','');
       }else{
         numbers.push (+userInput); 
       }   
       } while (userInput !== null);
+ 
+      if (numbers.length > 1) { 
+        for(let userInput of numbers){
+         total += userInput;
+        }
+         alert(`Общая сумма чисел ${total}`);  
+      }  
+      
+ 
 
-      for(let userInput of numbers){
-        total += userInput;
-      }
-      if(total !==0){
-       alert(`Общая сумма чисел ${total}`); 
-}
