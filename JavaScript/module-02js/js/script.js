@@ -31,12 +31,13 @@ let total = 0;
 
 do{
     userInput = prompt( 'Введите  число','');
-      if(!userInput) break;
 
-      else if (Number.isNaN(+userInput)){
-         alert('Было введено не число, попробуйте еще раз','');
-      }else{
-        numbers.push (+userInput); 
+      if (!Number.isNaN(+userInput) && +userInput !== 0){
+        numbers.push (+userInput);
+
+      }else if (userInput !==null){
+        alert('Было введено не число, попробуйте еще раз');
+
       }   
       } while (userInput !== null);
  
