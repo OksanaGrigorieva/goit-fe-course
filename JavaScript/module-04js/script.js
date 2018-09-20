@@ -64,29 +64,18 @@ const products = {
   };
    
    this.countTotalPrice = function (order) {
-    const totalPrice = 0;
-    const keys = Object.keys(order);
-    for(const key in products){
-        if(products[key] === keys){
-
-        }  
-
-    };
-
-    
-        return this.totalPrice;
-  
-  };
-    
-   this.countChange = function (totalPrice) {
-     if(customerMoney < totalPrice){
-       console.log(onError);
-       return null;
-     } else if (customerMoney > totalPrice){
-       console.log(onSuccess);
-       return (onSuccess(change));
-     }
-    };
+      this.totalPrice = 0;
+     const keys = Object.keys(order);   
+     for(let key of keys){
+     this.totalPrice += order[key] * products[key];
+             }
+            return this.totalPrice;
+         };        
+        
+         
+    this.countChange = function (totalPrice) {
+      return this.customerMoney < totalPrice ? null : this.customerMoney - totalPrice;
+      };
      
       this.onSuccess = function (change) {
       console.log(`Спасибо за покупку, ваша сдача ${change}!`);
@@ -98,11 +87,11 @@ const products = {
      };
      
      this.reset = function () {
-       return;
+       return (this.customerMoney = 0);
      };
      
       
-   };
+    };
     
     
   
@@ -130,7 +119,7 @@ const products = {
   console.log(mango.customerMoney); // 300
   
   /*  Вызываем countChange для подсчета сдачи */
-  const change = mango.countChange();
+  const change = mango.countChange(totalPrice);
   
   /*  Проверяем что нам вернул countChange */
   console.log(change); // 190
