@@ -59,37 +59,28 @@ const products = {
   this.customerMoney = 0;
    
    
-  this.getCustomerMoney = function (value) {
-    this.customerMoney = value;
-  };
+  this.getCustomerMoney = (value) => this.customerMoney = value;
+  
    
-   this.countTotalPrice = function (order) {
-      this.totalPrice = 0;
+   this.countTotalPrice = (order) =>{
+      let totalPrice = 0;
      const keys = Object.keys(order);   
      for(let key of keys){
-     this.totalPrice += order[key] * products[key];
+     totalPrice += order[key] * products[key];
              }
-            return this.totalPrice;
+            return totalPrice;
          };        
         
          
-    this.countChange = function (totalPrice) {
+    this.countChange = (totalPrice) =>{
       return this.customerMoney < totalPrice ? null : this.customerMoney - totalPrice;
       };
      
-      this.onSuccess = function (change) {
-      console.log(`Спасибо за покупку, ваша сдача ${change}!`);
-    };
-     
-     
-     this.onError = function () {
-       console.log(`Очень жаль, вам не хватает денег на покупки`);
-     };
-     
-     this.reset = function () {
-       return (this.customerMoney = 0);
-     };
-     
+      this.onSuccess = (change) => console.log(`Спасибо за покупку, ваша сдача ${change}!`);
+    
+     this.onError = () => console.log(`Очень жаль, вам не хватает денег на покупки`);
+    
+     this.reset = () => this.customerMoney = 0;
       
     };
     
